@@ -9,6 +9,10 @@
 
 body {
     background-color: rgb(255, 255, 255) ;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: 100;
 }
 
 
@@ -20,11 +24,16 @@ body {
     
 }
 
+.nav-links {
+    margin: 0px 40px;
+}
+
 .navbar-logo {
     width: 30%;
 }
 
 .navbar-logo img {
+    
     width: 100%;
 }
 
