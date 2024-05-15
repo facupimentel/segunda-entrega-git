@@ -11,6 +11,8 @@ body {
     background-color: rgb(255, 255, 255) ;
 }
 
+
+
 /* banner principal */
 
 .bg-navbar {
@@ -333,26 +335,14 @@ main h2 {
     color: #A1EF00;
 }
 
-main .rutina-uno .texto {
-    background-color: #242424;
-    color: whitesmoke;
-    margin: 20px 5px; 
-    border-radius: 2px;
-    font-size: 13px;
-    padding: 5px;
-}
 
-main .rutina-uno table {
-    border: 2px solid #212529;
-    margin: 30px 0px;
-}
 
 main .rutina-uno table tr, main .rutina-uno table td {
     border: 1px solid #A1EF00;
     color: whitesmoke;
 }
 
-main .rutina-dos .texto {
+main .rutina-dos .texto, main .rutina-uno .texto {
     background-color: #242424;
     color: whitesmoke;
     margin: 20px 5px; 
@@ -361,10 +351,10 @@ main .rutina-dos .texto {
     padding: 5px;
 }
 
-main .rutina-dos table {
-    border: 1px solid #242424;
+main .rutina-uno table, main .rutina-dos table {
     margin: 30px 0px;
     color: whitesmoke;
+    background-color: #FFFFFF;
     
 }
 
@@ -387,8 +377,14 @@ main .rutina-uno .rutinas-img img, main .rutina-dos .rutinas-img img {
     object-fit: cover;
 }
 
+tr, td {
+    padding: 20px;
+    background-color: #242424;
+}
+
 
 /* CONTACTOS */
+
 
 main .redes img {
     width: 40%;
@@ -398,6 +394,7 @@ main .redes img {
 main .redes p {
     color: #A1EF00;
     font-size: 17px;
+    padding: 10px;
 }
 
 table {
@@ -448,4 +445,229 @@ input, select {
     gap: 15px;
     border: 100px;
     color: #242424;
+}
+
+/* MQ DESKTOP */
+
+@media screen and (min-width:1280px){
+    /* header */
+    .navbar-logo img {
+        width: 30%;
+    }
+
+    /* main */
+    main .box-one {
+        display: flex;
+    }
+
+    main .box-one .texto {
+        width: 40%;
+    }
+
+    main .box-one .grid-img {
+        margin: 20px 15px;
+        padding: 20px;
+        
+    }
+
+    .links-pages {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .links-pages .container-links{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    footer div img {
+        width: 20%;
+    
+    }
+
+    /* GALERIA */
+
+    .galeria .cuadro-uno {
+        display: flex;
+        
+    }
+
+    .galeria .cuadro-uno div {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 2px;
+        padding: 5px;
+    }
+
+    .galeria .cuadro-dos img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 2px;
+    }
+
+    .galeria .cuadro-dos{
+        margin: 0px 50px;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr) ;
+        grid-template-rows: repeat(2, 50%) ;
+        
+    }
+
+    .galeria .cuadro-tres {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) ;
+        grid-template-rows: repeat(2, 50%) ;
+        margin: 0px 80px;
+        gap: 5px;
+    }
+
+    .galeria .cuadro-tres .tres-img-uno {
+        grid-row: span 2;
+    }
+
+    .galeria .cuadro-tres .tres-img-tres {
+        grid-column:2 / 3;
+        grid-row: 1;
+
+    }
+    .galeria .cuadro-tres .tres-img-dos {
+        grid-column: 3;
+        grid-row: span 2;
+    }
+
+    .galeria .cuadro-cuatro {
+        display: flex;
+    }
+
+    .galeria .cuadro-cuatro img {
+        margin: 0px 80px;
+        width: 50%;
+    }
+
+    .galeria .cuadro-cuatro p {
+        font-size: 20px;
+        margin: 0px 80px;
+    }
+
+    /* ENTRENADORES */
+
+    
+
+    main .profe-uno .profe-cbum img, main .profe-dos .profe-canelo img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    main .profe-uno, main .profe-dos {
+        display: flex;
+        align-items: center;
+        color: whitesmoke;
+        margin: 20px 120px;
+        
+        
+        
+    }
+
+    main .profe-cbum, main .profe-canelo{ 
+         width: 35%;
+    }
+    
+    main .profe-uno .textos, main .profe-dos .textos {
+        margin: 45px 0px;
+        font-size: 15px;
+        padding: 15px;
+        width: 70%;
+        background-color: #242424;
+        
+    }
+
+    main .profe-uno .textos h2, main .profe-dos .textos h2 {
+        font-size: 70px;
+    }
+
+    main .profe-uno .textos p, main .profe-dos .textos p{
+        margin: 50px 15px;
+    }
+
+    main .fotos-cbum{
+        height: 60vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) ;
+        grid-template-rows: repeat(2, 50%);
+        margin: 5px 30px;
+        gap: 2px;
+    }
+
+    main .fotos-cbum .cbum-uno {
+        grid-row: span 2;
+    }
+
+    main .fotos-cbum .cbum-dos{
+        grid-column: 3;
+        grid-row: span 2;
+    }
+
+    main .fotos-cbum .cbum-tres {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    main .fotos-cbum .cbum-cuatro {
+        grid-column: 2;
+    }
+    
+    main .fotos-canelo {
+        height: 80vh;
+        margin: 5px 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) ;
+        grid-template-rows: repeat(2, 50%) ;
+        gap: 2px;
+    }
+
+
+    main .fotos-canelo .canelo-uno {
+        grid-row: span 2;
+    }
+
+    main .fotos-canelo .canelo-tres {
+        grid-row: span 2;
+    }
+
+    /* RUTINA */
+
+    main .rutina-uno .rutinas-img img, main .rutina-dos .rutinas-img img {
+        width: 40%;
+
+    }
+
+    main .rutina-uno table, main .rutina-dos table {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    tr, td {
+        padding: 20px;
+        background-color: #242424;
+    }
+
+    /* CONTACTOS */
+
+    main .redes {
+        display: flex;
+    }
+
+    .controles {
+        width: 65%;
+    }
+    .formulario div {
+        width: 70%;
+    }
+
 }
