@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+/* MOBILE FIRST */
+
 /* body */
 
 body {
@@ -285,9 +287,9 @@ main .profe-uno, main .profe-dos {
 }
 
 main .profe-uno .textos, main .profe-dos .textos {
-    width: 60%;
+    width: 100%;
     padding: 4px;
-    font-size: 10px;
+    font-size: 11px;
 }
 
 main .profe-uno .profe-cbum img, main .profe-dos .profe-canelo img{
@@ -388,7 +390,6 @@ main .rutina-uno .rutinas-img img, main .rutina-dos .rutinas-img img {
 }
 
 tr, td {
-    padding: 20px;
     background-color: #242424;
 }
 
