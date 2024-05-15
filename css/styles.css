@@ -287,7 +287,7 @@ main .profe-uno, main .profe-dos {
 main .profe-uno .textos, main .profe-dos .textos {
     width: 60%;
     padding: 4px;
-    font-size: 8px;
+    font-size: 10px;
 }
 
 main .profe-uno .profe-cbum img, main .profe-dos .profe-canelo img{
